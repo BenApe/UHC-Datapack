@@ -1,4 +1,5 @@
 #gamerule sendCommandFeedback false
+execute at @a[scores={start=1..}] run scoreboard players reset @a[scores={start=1..}] start
 gamemode survival @a
 scoreboard objectives add Timer minecraft.custom:minecraft.play_one_minute
 scoreboard players reset @a Timer

@@ -31,3 +31,9 @@ execute if score @r Timer matches 24121 run title @a actionbar {"text": "The Bor
 worldborder set 60 1200
 execute at @a[scores={Deaths=1}] run function uhc:on_death
 execute as @e[tag=coordStand,limit=1] at @s run particle minecraft:end_rod ~ 100 ~ 0.1 80 0.1 0 80 force
+scoreboard players enable @a help
+scoreboard players enable @a set_center
+scoreboard players enable @a start
+execute at @a[scores={help=1..}] run function uhc:help
+execute at @a[scores={set_center=1..}] run function uhc:set_center
+execute at @a[scores={start=1..}] run function uhc:start
