@@ -2,8 +2,6 @@
 gamemode survival @a
 scoreboard objectives add Timer minecraft.custom:minecraft.play_one_minute
 scoreboard players reset @a Timer
-scoreboard objectives setdisplay sidebar Timer
-scoreboard players add Dummy Timer 0
 scoreboard objectives add HP health
 scoreboard players reset @a HP
 scoreboard objectives setdisplay belowName HP
