@@ -37,7 +37,7 @@
     execute if score @r Timer matches 24121 run title @a actionbar {"text": "The Border Shrinks at Half a Block / Second", "color": "#48ad29"}
 
 # Worldborder shrink
-    worldborder set 60 1200
+    execute if score @r Timer matches 24121 run worldborder set 60 1200
 
 # Always run
     execute at @a[scores={Deaths=1}] run function uhc:on_death
